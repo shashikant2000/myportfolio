@@ -1,10 +1,10 @@
 export const aboutMeData = [
 	{
 		id: 1,
-		bio: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+		bio: "With a Bachelor's degree in Computer Engineering from Indraprastha Institute of Information Technology, Delhi, my journey has led me to Qualcomm, where I currently excel as an Engineer. My core competencies lie in front-end development, with a focus on creating dynamic desktop applications and enhancing web components.",
 	},
 	{
 		id: 2,
-		bio: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
+		bio: "At Qualcomm, my team and I have integrated a cross-framework component library across 15+ applications, leading to streamlined development and consistent user experiences. We thrive on collaboration and are committed to aligning our innovative solutions with the organization's mission, fostering a culture of continuous improvement and shared success.",
 	},
 ];

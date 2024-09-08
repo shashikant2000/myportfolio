@@ -10,8 +10,6 @@ import {
 	FiFacebook,
 	FiInstagram,
 	FiLinkedin,
-	FiTwitter,
-	FiYoutube,
 } from 'react-icons/fi';
 
 export const singleProjectData = {
@@ -102,17 +100,17 @@ export const singleProjectData = {
 		],
 		SocialSharingHeading: 'Share This',
 		SocialSharing: [
-			{
-				id: 1,
-				name: 'Twitter',
-				icon: <FiTwitter />,
-				url: 'https://twitter.com/realstoman',
-			},
+			// {
+			// 	id: 1,
+			// 	name: 'Twitter',
+			// 	icon: <FiTwitter />,
+			// 	url: 'https://twitter.com/realstoman',
+			// },
 			{
 				id: 2,
 				name: 'Instagram',
 				icon: <FiInstagram />,
-				url: 'https://instagram.com/realstoman',
+				url: 'https://instagram.com/shashikant_k_y',
 			},
 			{
 				id: 3,
@@ -125,12 +123,6 @@ export const singleProjectData = {
 				name: 'LinkedIn',
 				icon: <FiLinkedin />,
 				url: 'https://linkedin.com/',
-			},
-			{
-				id: 5,
-				name: 'Youtube',
-				icon: <FiYoutube />,
-				url: 'https://www.youtube.com/c/StomanStudio',
 			},
 		],
 	},

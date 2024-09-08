@@ -1,7 +1,7 @@
 export const aboutMeData = [
 	{
 		id: 1,
-		bio: "With a Bachelor's degree in Computer Engineering from Indraprastha Institute of Information Technology, Delhi, my journey has led me to Qualcomm, where I currently excel as an Engineer. My core competencies lie in front-end development, with a focus on creating dynamic desktop applications and enhancing web components.",
+		bio: "With a Bachelor's degree in Computer Engineering from Indraprastha Institute of Information Technology, Delhi, my journey has led me to Qualcomm, where I currently excel as a Full-Stack Developer. My core competencies lie in front-end development, with a focus on creating dynamic desktop applications and enhancing web components.",
 	},
 	{
 		id: 2,

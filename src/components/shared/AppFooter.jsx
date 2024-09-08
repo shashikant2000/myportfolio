@@ -2,36 +2,43 @@ import {
 	FiGithub,
 	FiTwitter,
 	FiLinkedin,
-	FiGlobe,
-	FiYoutube,
+	FiInstagram
 } from 'react-icons/fi';
+
+import {SiLeetcode} from 'react-icons/si'
 import AppFooterCopyright from './AppFooterCopyright';
 
 const socialLinks = [
+	// {
+	// 	id: 1,
+	// 	icon: <FiGlobe />,
+	// 	url: 'https://www.stoman.me/',
+	// },
 	{
 		id: 1,
-		icon: <FiGlobe />,
-		url: 'https://www.stoman.me/',
+		icon: <FiGithub />,
+		url: 'https://github.com/shashikant2000',
 	},
 	{
 		id: 2,
-		icon: <FiGithub />,
-		url: 'https://github.com/realstoman',
+		icon: <FiTwitter />,
+		url: 'https://x.com/Shashik46200028',
 	},
 	{
 		id: 3,
-		icon: <FiTwitter />,
-		url: 'https://twitter.com/realstoman',
+		icon: <FiLinkedin />,
+		url: 'https://www.linkedin.com/in/shashikantkumar2000/',
 	},
 	{
 		id: 4,
-		icon: <FiLinkedin />,
-		url: 'https://www.linkedin.com/in/realstoman',
+		icon: <SiLeetcode />,
+		url: 'https://leetcode.com/u/shashikant18096/',
 	},
 	{
 		id: 5,
-		icon: <FiYoutube />,
-		url: 'https://www.youtube.com/c/realstoman',
+		name: 'Instagram',
+		icon: <FiInstagram />,
+		url: 'https://www.instagram.com/shashikant_k_y/',
 	},
 ];
 

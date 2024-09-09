@@ -1,6 +1,7 @@
 import { AnimatePresence } from 'framer-motion';
 import { lazy, Suspense } from 'react';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import {SingleProjectProvider} from "./context/SingleProjectContext";
 import ScrollToTop from './components/ScrollToTop';
 import AppFooter from './components/shared/AppFooter';
 import AppHeader from './components/shared/AppHeader';
@@ -18,6 +19,7 @@ function App() {
 	return (
 		<AnimatePresence>
 			<div className=" bg-secondary-light dark:bg-primary-dark transition duration-300">
+			<SingleProjectProvider> 
 				<Router>
 					<ScrollToTop />
 					<AppHeader />
@@ -36,6 +38,7 @@ function App() {
 					</Suspense>
 					<AppFooter />
 				</Router>
+			</SingleProjectProvider> 
 				<UseScrollToTop />
 			</div>
 		</AnimatePresence>

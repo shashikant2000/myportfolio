@@ -1,8 +1,10 @@
 const selectOptions = [
 	'Web Application',
-	'Mobile Application',
-	'UI/UX Design',
-	'Branding',
+	'Desktop App',
+	'UI Component Library'
+	// 'Mobile Application',
+	// 'UI/UX Design',
+	// 'Branding',
 ];
 
 const ProjectsFilter = ({ setSelectProject }) => {

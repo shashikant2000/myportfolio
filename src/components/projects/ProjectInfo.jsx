@@ -22,7 +22,7 @@ const ProjectInfo = () => {
 									>
 										<span>{info.title}: </span>
 										<a
-											href="https://stoman.me"
+											href={info.details}
 											className={
 												info.title === 'Website' ||
 												info.title === 'Phone'
@@ -99,8 +99,9 @@ const ProjectInfo = () => {
 						<p
 							key={details.id}
 							className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light"
+							dangerouslySetInnerHTML={{ __html: details.details }}
 						>
-							{details.details}
+							{/* {details.details} */}
 						</p>
 					);
 				})}

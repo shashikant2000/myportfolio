@@ -1,7 +1,12 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
-const ProjectSingle = ({ title, category, image }) => {
+import { useContext } from 'react';
+
+import SingleProjectContext from "../../context/SingleProjectContext";
+
+const ProjectSingle = ({ title, category, image ,data}) => {
+	const { setSingleProjectData } = useContext(SingleProjectContext);
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -12,7 +17,7 @@ const ProjectSingle = ({ title, category, image }) => {
 				delay: 0.15,
 			}}
 		>
-			<Link to="/projects/single-project" aria-label="Single Project">
+			<Link to="/projects/single-project" aria-label="Single Project" onClick={() => setSingleProjectData(data)}>
 				<div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark">
 					<div>
 						<img

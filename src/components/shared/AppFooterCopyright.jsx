@@ -12,7 +12,7 @@ function AppFooterCopyright() {
 					target="__blank"
 					className="text-secondary-dark dark:text-secondary-light font-medium hover:underline hover:text-indigo-600 dark:hover:text-indigo-300 ml-1 duration-500"
 				>
-					Shashikant Portfolio
+					Shashikant's Portfolio
 				</a>
 				<div className="mt-2 text-sm text-gray-600 dark:text-gray-400">
 					Version {version}

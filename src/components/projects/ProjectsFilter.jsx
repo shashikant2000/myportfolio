@@ -1,7 +1,7 @@
 const selectOptions = [
 	'Web Application',
 	'Desktop App',
-	'UI Component Library'
+	'Component Library'
 	// 'Mobile Application',
 	// 'UI/UX Design',
 	// 'Branding',
@@ -13,6 +13,7 @@ const ProjectsFilter = ({ setSelectProject }) => {
 			onChange={(e) => {
 				setSelectProject(e.target.value);
 			}}
+			style={{minWidth: '160px'}}
 			className="
                 px-4
                 sm:px-6

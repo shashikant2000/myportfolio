@@ -11,7 +11,7 @@ import {testingProjectData} from "../data/testingProjectData";
 import {quiProjectData} from "../data/quiProjectData";
 const rawProjectsData = [
 	{
-		title: 'Margin Tool',
+		title: 'Device Margin Tool',
 		category: 'Desktop Application',
 		img: WebImage2,
 		data: marginProjectData

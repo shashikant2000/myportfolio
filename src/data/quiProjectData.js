@@ -14,7 +14,7 @@ import {
 
 export const quiProjectData = {
 	ProjectHeader: {
-		title: 'Margin App',
+		title: 'Qulacomm UI',
 		publishDate: 'August 26, 2024',
 		tags: 'UI / Frontend/ Electron',
 	},
@@ -98,6 +98,17 @@ export const quiProjectData = {
 					'5. <strong>High Adoption Rate:</strong><br>' +
 					'- Achieved over 30,000 internal downloads, demonstrating the library’s effectiveness and its critical role in the organization’s development workflows.',
 			},
+			{
+				id: 3,
+				details:
+					'<strong>Success Criteria:</strong><br>' +
+					'1. Seamless integration across both Angular and React.<br>' +
+					'2. Consistent styling using Tailwind CSS with minimal custom CSS.<br>' +
+					'3. TypeScript implementation to ensure strong type safety and code quality.<br>' +
+					'4. Over 30,000 internal downloads, showing wide adoption and effectiveness.<br>' +
+					'5. Continuous feedback and iteration to improve performance and usability.',
+			},
+		
 		],				
 		SocialSharingHeading: 'Share This',
 		SocialSharing: [

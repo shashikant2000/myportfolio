@@ -14,7 +14,7 @@ import {
 
 export const marginProjectData = {
 	ProjectHeader: {
-		title: 'Margin App',
+		title: 'Device Margin App',
 		publishDate: 'August 26, 2024',
 		tags: 'UI / Frontend/ Electron',
 	},
@@ -118,7 +118,7 @@ export const marginProjectData = {
 				id: 2,
 				name: 'Instagram',
 				icon: <FiInstagram />,
-				url: 'https://instagram.com/shashikant_k_y',
+				url: 'https://instagram.com/',
 			},
 			{
 				id: 3,

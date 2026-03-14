@@ -13,6 +13,7 @@ const Contact = lazy(() => import('./pages/Contact.jsx'));
 const Home = lazy(() => import('./pages/Home'));
 const Projects = lazy(() => import('./pages/Projects'));
 const ProjectSingle = lazy(() => import('./pages/ProjectSingle.jsx'));
+const Resume = lazy(() => import('./pages/Resume.jsx'));
 
 const LoadingSpinner = () => (
 	<div className="flex items-center justify-center min-h-[60vh]">
@@ -53,6 +54,7 @@ function App() {
 							/>
 
 							<Route path="about" element={<About />} />
+							<Route path="resume" element={<Resume />} />
 							<Route path="contact" element={<Contact />} />
 							<Route path="*" element={<NotFound />} />
 						</Routes>

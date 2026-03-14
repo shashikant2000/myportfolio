@@ -1,5 +1,6 @@
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 import { FiArrowDownCircle } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 import unDraw from "../../images/undraw.svg"
 import { motion } from 'framer-motion';
 
@@ -48,17 +49,16 @@ const AppBanner = () => {
 					}}
 					className="flex justify-center sm:block"
 				>
-					<a
-						download="Shashikant_Resume.pdf"
-						href={`${process.env.PUBLIC_URL}/files/Shashikant_Resume.pdf`}
+					<Link
+						to="/resume"
 						className="font-general-medium flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-indigo-50 focus:ring-1 focus:ring-indigo-900 hover:bg-indigo-500 text-gray-500 hover:text-white duration-500"
-						aria-label="Download CV"
+						aria-label="View Resume"
 					>
 						<FiArrowDownCircle className="mr-2 sm:mr-3 h-5 w-5 sm:w-6 sm:h-6 duration-100"></FiArrowDownCircle>
 						<span className="text-sm sm:text-lg font-general-medium duration-100">
-							Download CV
+							View CV
 						</span>
-					</a>
+					</Link>
 				</motion.div>
 			</div>
 			<motion.div

@@ -1,0 +1,180 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape SHASHIKANT KUMAR} \\ \vspace{10pt}
+    \faPhone \ \small +91 9354645927 $|$ \href{mailto:2000shashikant1@gmail.com}{\faEnvelope} {{2000shashikant1@gmail.com}} $|$ 
+    \href{https://github.com/shashikant2000}{ {\faGithubSquare } {Github}} $|$
+    \href{https://linkedin.com/in/shashikantkumar2000}{ {\faLinkedin } {LinkedIn}}
+    $|$
+    \href{https://shashikant2000.github.io/myportfolio/}{ {\faGlobe } {Portfolio}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\small{\textbf{Software Development Engineer II} at \textbf{Microsoft} with \textbf{4 years} of experience in \textbf{cloud infrastructure, database migration tooling}, and scalable application development. Proficient across the full stack with \textbf{C\#, .NET, Azure, React}, and \textbf{Angular}. Proven track record of shipping customer-facing features, leading releases, and improving system reliability at scale.}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indraprastha Institute of Information Technology (IIIT) Delhi}{New Delhi, India}
+      {B.Tech in Computer Science \& Engineering \textbar{} CGPA: 8.13}{August 2018 - June 2022}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+          {Microsoft}{Hyderabad, Telangana}
+          {Software Development Engineer II}{March 2025 - Present}
+          \resumeItemListStart
+            \resumeItem{Enabled \textbf{SQL Server on Azure VM as a migration target} across Azure database migration experiences, unblocking customers migrating on-premises and Arc-enabled SQL Server workloads to Azure Virtual Machines.}
+            \resumeItem{Built \textbf{target selection and validation logic}, naming conflict checks, and error/warning messaging for VM migration UX, reducing migration failures caused by misconfiguration.}
+            \resumeItem{Analyzed migration flows leveraging \textbf{Azure DMS} for VM-based migrations, including backup upload to \textbf{Azure Blob Storage} and restore-based paths. Evaluated POCs vs DMS-native capabilities to surface trade-offs and reliability concerns.}
+            \resumeItem{Identified limitations in \textbf{Azure SQL VM} and \textbf{ARM APIs}, implementing UI fallbacks, conditional rendering, and defensive checks to ensure predictable behavior with imperfect API responses.}
+            \resumeItem{Shipped \textbf{Copilot for Oracle} (GA) integration in \textbf{SSMA} and implemented \textbf{Entra ID authentication} UI for managed endpoints (Preview), including admin consent toggle, suggestion dialogs, and high-DPI rendering fixes.}
+            \resumeItem{Led release management for \textbf{SSMA 10.4} -- one of the largest releases -- coordinating cross-team efforts, updating test plans, and ensuring on-time delivery before \textbf{Microsoft Ignite}.}
+            \resumeItem{Resolved \textbf{20+ accessibility bugs}, becoming the team's SME in a11y. Fixed multiple \textbf{SFI security issues} and contributed to \textbf{.NET 8 upgrade} testing for Oracle.}
+            \resumeItem{Authored technical design documentation covering \textbf{VM migration flows}, edge cases, and failure modes. Participated in \textbf{design reviews}, bug bashes, and validation cycles.}
+          \resumeItemListEnd
+          
+    \resumeSubheading
+      {Qualcomm}{Hyderabad, Telangana}
+      {Software Engineer}{June 2022 - March 2025}
+      \resumeItemListStart
+        \resumeItem{Built a \textbf{cross-framework component library} (Angular \& React) with \textbf{20+ reusable components}, deployed across \textbf{25+ production applications}.}
+        \resumeItem{Built \textbf{Qualcomm Power \& Thermal (QPT)}, a desktop application enabling customers to tune latest chipset \textbf{thermal parameters}, perform optimizations, and fine-tune power/thermal configurations.}
+        \resumeItem{Created a \textbf{desktop Margin Tool} using \textbf{React, Electron, and Vite} for real-time visualization of chipset performance metrics (PCIe, UFS, CSI) with dynamic graphs and interactive charts.}
+        \resumeItem{Developed features and enhanced a \textbf{testing automation web application} using \textbf{Angular} and \textbf{.NET}, enabling engineers to execute, schedule, and track test cases across multiple Qualcomm chip platforms.}
+        \resumeItem{Implemented APIs with \textbf{smart filtration techniques} to efficiently handle \textbf{millions} of bug reports, powering a highly customizable bug dashboard for debugging and issue tracking.}
+        \resumeItem{Developed and maintained \textbf{RESTful APIs} using \textbf{.NET and C\#} for the AXIOM tool. Optimized complex \textbf{LINQ queries}, reducing page load times by \textbf{70\%}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+% -----------PROGRAMMING SKILLS-----------
+\vspace{-17pt}
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \textbf{Languages}{: C\#, TypeScript, JavaScript (ES6+), Python, SQL, Java} \\
+        \textbf{Backend}{: .NET, ASP.NET, Node.js, REST APIs, Microservices, MS SQL Server, MongoDB, Azure SQL, Azure DMS} \\
+        \textbf{Frontend}{: React, Angular, Electron, WPF, Next.js, Tailwind CSS, Redux, Vite} \\
+        \textbf{Cloud \& DevOps}{: Azure (SQL VM, DMS, Blob Storage, ARM APIs), Git, Jenkins, Docker, CI/CD, Playwright, Cypress} \\
+        \textbf{Practices}{: System Design, Code Reviews, Agile/Scrum, Accessibility (a11y), Release Management}
+    }}
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}

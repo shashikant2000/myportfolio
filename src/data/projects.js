@@ -7,7 +7,15 @@ import {marginProjectData} from "../data/marginProjectData";
 import {testingProjectData} from "../data/testingProjectData";
 import {quiProjectData} from "../data/quiProjectData";
 import {ssmaProjectData} from "../data/ssmaProjectData";
+import {vmMigrationProjectData} from "../data/vmMigrationProjectData";
 const rawProjectsData = [
+	{
+		title: 'SQL Server VM Migration (Azure)',
+		slug: 'sql-vm-migration',
+		category: 'Web Application',
+		img: WebImage1,
+		data: vmMigrationProjectData
+	},
 	{
 		title: 'SQL Server Migration Assistant (SSMA)',
 		slug: 'ssma-tool',

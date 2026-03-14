@@ -9,24 +9,28 @@ import {ssmaProjectData} from "../data/ssmaProjectData";
 const rawProjectsData = [
 	{
 		title: 'SQL Server Migration Assistant (SSMA)',
+		slug: 'ssma-tool',
 		category: 'Desktop Application',
 		img: WebImage1,
 		data: ssmaProjectData
 	},
 	{
 		title: 'Device Margin Tool',
+		slug: 'device-margin-tool',
 		category: 'Desktop Application',
 		img: WebImage2,
 		data: marginProjectData
 	},
 	{
 		title: 'Device Testing Automation',
+		slug: 'device-testing-automation',
 		category: 'Web Application',
 		img: WebImage1,
 		data: testingProjectData
 	},
 	{
 		title: 'UI Component Library',
+		slug: 'ui-component-library',
 		category: 'Component Library',
 		img: UIImage1,
 		data: quiProjectData

@@ -7,20 +7,20 @@ import { FiChevronUp } from 'react-icons/fi';
 const useScrollToTop = () => {
 	const [showScroll, setShowScroll] = useState(false);
 
-	useEffect(() => {
-		window.addEventListener('scroll', scrollToTop);
-		return function cleanup() {
-			window.removeEventListener('scroll', scrollToTop);
-		};
-	});
-
 	const scrollToTop = () => {
-		if (!showScroll && window.pageYOffset > 400) {
+		if (window.pageYOffset > 400) {
 			setShowScroll(true);
-		} else if (showScroll && window.pageYOffset <= 400) {
+		} else {
 			setShowScroll(false);
 		}
 	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', scrollToTop);
+		return () => {
+			window.removeEventListener('scroll', scrollToTop);
+		};
+	}, []); // eslint-disable-line react-hooks/exhaustive-deps
 
 	const backToTop = () => {
 		window.scrollTo({
@@ -28,8 +28,6 @@ const useScrollToTop = () => {
 			behavior: 'smooth',
 		});
 	};
-
-	window.addEventListener('scroll', scrollToTop);
 
 	return (
 		<>

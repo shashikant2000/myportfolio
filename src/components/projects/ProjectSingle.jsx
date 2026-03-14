@@ -23,7 +23,8 @@ const ProjectSingle = ({ title, category, image ,data}) => {
 						<img
 							src={image}
 							className="rounded-t-xl border-none"
-							alt="Single Project"
+							alt={title}
+							loading="lazy"
 						/>
 					</div>
 					<div className="text-center px-4 py-6">

@@ -12,8 +12,8 @@ const ProjectGallery = () => {
 						<img
 							src={project.img}
 							className="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
-							alt={project.title}
-							key={project.id}
+							alt={`${project.title} gallery image`}
+							loading="lazy"
 						/>
 					</div>
 				);

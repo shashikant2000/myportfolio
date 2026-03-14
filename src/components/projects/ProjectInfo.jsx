@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+import DOMPurify from 'dompurify';
 import SingleProjectContext from '../../context/SingleProjectContext';
 
 const ProjectInfo = () => {
@@ -99,9 +100,8 @@ const ProjectInfo = () => {
 						<p
 							key={details.id}
 							className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light"
-							dangerouslySetInnerHTML={{ __html: details.details }}
+							dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(details.details) }}
 						>
-							{/* {details.details} */}
 						</p>
 					);
 				})}

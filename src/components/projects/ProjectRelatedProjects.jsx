@@ -16,8 +16,8 @@ const ProjectRelatedProjects = () => {
 						<img
 							src={project.img}
 							className="rounded-xl cursor-pointer"
-							alt={project.title}
-							key={project.id}
+							alt={`${project.title} related project`}
+							loading="lazy"
 						/>
 					);
 				})}

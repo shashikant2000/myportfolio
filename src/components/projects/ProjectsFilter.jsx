@@ -2,9 +2,6 @@ const selectOptions = [
 	'Web Application',
 	'Desktop App',
 	'Component Library'
-	// 'Mobile Application',
-	// 'UI/UX Design',
-	// 'Branding',
 ];
 
 const ProjectsFilter = ({ setSelectProject }) => {
@@ -13,8 +10,8 @@ const ProjectsFilter = ({ setSelectProject }) => {
 			onChange={(e) => {
 				setSelectProject(e.target.value);
 			}}
-			style={{minWidth: '160px'}}
 			className="
+                min-w-[160px]
                 px-4
                 sm:px-6
                 py-2
@@ -30,7 +27,7 @@ const ProjectsFilter = ({ setSelectProject }) => {
                 dark:text-ternary-light
             "
 		>
-			<option value={setSelectProject} className="text-sm sm:text-md">
+			<option value="" className="text-sm sm:text-md">
 				All Projects
 			</option>
 

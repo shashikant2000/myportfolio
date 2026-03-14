@@ -1,5 +1,5 @@
 // Import images
-import Image1 from '../images/web-project-1.jpg';
+import SSMAImage from '../images/ssma-project.png';
 import Image2 from '../images/web-project-2.jpg';
 import Image3 from '../images/ui-project-1.jpg';
 import Image4 from '../images/mobile-project-1.jpg';
@@ -7,6 +7,8 @@ import Image5 from '../images/mobile-project-2.jpg';
 import Image6 from '../images/ui-project-2.jpg';
 // Import icons
 import {
+	FiFacebook,
+	FiInstagram,
 	FiLinkedin,
 } from 'react-icons/fi';
 
@@ -20,7 +22,7 @@ export const ssmaProjectData = {
 		{
 			id: 1,
 			title: 'SSMA Migration Workflow',
-			img: Image1,
+			img: SSMAImage,
 		},
 		{
 			id: 2,
@@ -102,6 +104,18 @@ export const ssmaProjectData = {
 		SocialSharing: [
 			{
 				id: 1,
+				name: 'Instagram',
+				icon: <FiInstagram />,
+				url: 'https://www.instagram.com/shashikant_k_y/',
+			},
+			{
+				id: 2,
+				name: 'Facebook',
+				icon: <FiFacebook />,
+				url: 'https://facebook.com/',
+			},
+			{
+				id: 3,
 				name: 'LinkedIn',
 				icon: <FiLinkedin />,
 				url: 'https://www.linkedin.com/in/shashikantkumar2000/',
@@ -129,7 +143,7 @@ export const ssmaProjectData = {
 			{
 				id: 4,
 				title: 'Web Application',
-				img: Image1,
+				img: Image2,
 			},
 		],
 	},

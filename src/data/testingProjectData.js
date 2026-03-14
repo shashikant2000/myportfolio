@@ -21,43 +21,39 @@ export const testingProjectData = {
 	ProjectImages: [
 		{
 			id: 1,
-			title: 'Kabul Project Management UI',
+			title: 'Device Test Automation',
 			img: Image1,
 		},
 		{
 			id: 2,
-			title: 'Kabul Project Management UI',
+			title: 'Device Test Automation',
 			img: Image2,
 		},
 		{
 			id: 3,
-			title: 'Kabul Project Management UI',
+			title: 'Device Test Automation',
 			img: Image3,
 		},
 	],
 	ProjectInfo: {
-		ClientHeading: 'About Client',
+		ClientHeading: 'About',
 		CompanyInfo: [
 			{
 				id: 1,
-				title: 'Name',
+				title: 'Organization',
 				details: 'Qualcomm India Pvt. Ltd',
 			},
 			{
 				id: 2,
 				title: 'Services',
-				details: 'Mobile, Desktop, Automotive etc',
+				details: 'Mobile, Desktop, Automotive',
 			},
 			{
 				id: 3,
 				title: 'Website',
-				details: 'https://www.qualcomm.com/',
+				details: 'qualcomm.com',
+				url: 'https://www.qualcomm.com/',
 			},
-			// {
-			// 	id: 4,
-			// 	title: 'Phone',
-			// 	details: '555 8888 888',
-			// },
 		],
 		ObjectivesHeading: 'Objective',
 		ObjectivesDetails:
@@ -75,61 +71,45 @@ export const testingProjectData = {
 				],
 			},
 		],
-		ProjectDetailsHeading: 'Challenge',
+		ProjectDetailsHeading: 'Key Contributions',
 		ProjectDetails: [
 			{
 				id: 1,
 				details: 
-					'The web application integrates a dynamic Angular-based frontend with a robust .NET backend to offer a comprehensive solution for test automation. It enables users to manage and execute test cases effectively, track results, and generate detailed reports. The system supports various Qualcomm platforms, ensuring compatibility and performance optimization across different hardware configurations.',
+					'As a software developer at Qualcomm, I built an advanced testing automation web application for executing and managing test cases on upcoming Qualcomm chips and platforms. The tool streamlines hardware validation workflows, enabling engineers to efficiently track and analyze test outcomes.',
 			},
 			{
 				id: 2,
 				details: 
-					'<strong>Key Features:</strong><br>' +
-					'1. <strong>Angular Frontend Development:</strong><br>' +
-					'- Implemented a dynamic and responsive UI using Angular to facilitate seamless interaction with the testing automation tools. Focused on creating user-friendly pages for managing and executing test cases.<br>' +
-					'2. <strong>.NET Backend Integration:</strong><br>' +
-					'- Developed a robust backend using .NET to handle test case execution and data processing. Ensured smooth communication between the frontend and backend components to support real-time updates and efficient test management.<br>' +
-					'3. <strong>Testing Automation:</strong><br>' +
-					'- Enabled users to run and manage test cases for Qualcomm chips and platforms, providing detailed results and reports. Implemented features for scheduling, tracking, and analyzing test outcomes to support comprehensive testing workflows.<br>' +
-					'4. <strong>Platform Support:</strong><br>' +
-					'- Integrated support for various Qualcomm platforms, ensuring compatibility and optimized performance across different hardware configurations.',
+					'<strong>Angular Frontend & .NET Backend:</strong><br>' +
+					'Implemented a dynamic and responsive UI using Angular with PrimeNG components. Developed a robust .NET backend for test case execution and data processing, ensuring real-time updates and efficient test management across the stack.',
 			},
 			{
 				id: 3,
 				details: 
-					'<strong>Success Criteria:</strong><br>' +
-					'- The web app should provide a responsive and intuitive UI for managing and executing test cases.<br>' +
-					'- The backend should be capable of handling multiple concurrent test cases efficiently, providing accurate and timely results.<br>' +
-					'- Integration between Angular and .NET should be seamless, with smooth data exchange and real-time updates.<br>' +
-					'- The app should support a variety of Qualcomm chips and platforms, offering detailed insights and reports on test outcomes.',
+					'<strong>Testing Automation & Platform Support:</strong><br>' +
+					'Enabled users to schedule, run, and track test cases across multiple Qualcomm platforms. Implemented features for detailed reporting, result analysis, and compatibility verification across different hardware configurations.',
 			},
 		],	
 		SocialSharingHeading: 'Share This',
 		SocialSharing: [
-			// {
-			// 	id: 1,
-			// 	name: 'Twitter',
-			// 	icon: <FiTwitter />,
-			// 	url: 'https://twitter.com/realstoman',
-			// },
 			{
-				id: 2,
+				id: 1,
 				name: 'Instagram',
 				icon: <FiInstagram />,
-				url: 'https://instagram.com/shashikant_k_y',
+				url: 'https://www.instagram.com/shashikant_k_y/',
 			},
 			{
-				id: 3,
+				id: 2,
 				name: 'Facebook',
 				icon: <FiFacebook />,
 				url: 'https://facebook.com/',
 			},
 			{
-				id: 4,
+				id: 3,
 				name: 'LinkedIn',
 				icon: <FiLinkedin />,
-				url: 'https://linkedin.com/',
+				url: 'https://www.linkedin.com/in/shashikantkumar2000/',
 			},
 		],
 	},

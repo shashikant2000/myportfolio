@@ -14,10 +14,10 @@ const ProjectSingle = ({ title, category, image, slug }) => {
 		>
 			<Link to={`/projects/${slug}`} aria-label={title}>
 				<div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark">
-					<div>
+					<div className="overflow-hidden rounded-t-xl bg-ternary-light dark:bg-ternary-dark" style={{height: '224px'}}>
 						<img
 							src={image}
-							className="rounded-t-xl border-none"
+							className="rounded-t-xl border-none w-full h-full object-cover"
 							alt={title}
 							loading="lazy"
 						/>

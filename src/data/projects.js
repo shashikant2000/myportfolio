@@ -2,6 +2,7 @@
 import WebImage1 from '../images/web-project-1.jpg';
 import WebImage2 from '../images/web-project-2.jpg';
 import UIImage1 from '../images/ui-project-1.jpg';
+import SSMAImage from '../images/ssma-project.png';
 import {marginProjectData} from "../data/marginProjectData";
 import {testingProjectData} from "../data/testingProjectData";
 import {quiProjectData} from "../data/quiProjectData";
@@ -11,7 +12,7 @@ const rawProjectsData = [
 		title: 'SQL Server Migration Assistant (SSMA)',
 		slug: 'ssma-tool',
 		category: 'Desktop Application',
-		img: WebImage1,
+		img: SSMAImage,
 		data: ssmaProjectData
 	},
 	{

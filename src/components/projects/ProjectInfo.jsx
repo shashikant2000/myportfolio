@@ -23,7 +23,9 @@ const ProjectInfo = () => {
 									>
 										<span>{info.title}: </span>
 										<a
-											href={info.details}
+											href={info.url || info.details}
+											target={info.url ? '_blank' : undefined}
+											rel={info.url ? 'noopener noreferrer' : undefined}
 											className={
 												info.title === 'Website' ||
 												info.title === 'Phone'

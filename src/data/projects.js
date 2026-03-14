@@ -5,7 +5,14 @@ import UIImage1 from '../images/ui-project-1.jpg';
 import {marginProjectData} from "../data/marginProjectData";
 import {testingProjectData} from "../data/testingProjectData";
 import {quiProjectData} from "../data/quiProjectData";
+import {ssmaProjectData} from "../data/ssmaProjectData";
 const rawProjectsData = [
+	{
+		title: 'SQL Server Migration Assistant (SSMA)',
+		category: 'Desktop Application',
+		img: WebImage1,
+		data: ssmaProjectData
+	},
 	{
 		title: 'Device Margin Tool',
 		category: 'Desktop Application',

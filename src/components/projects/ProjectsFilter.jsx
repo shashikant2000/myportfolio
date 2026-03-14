@@ -1,6 +1,6 @@
 const selectOptions = [
+	'Desktop Application',
 	'Web Application',
-	'Desktop App',
 	'Component Library'
 ];
 

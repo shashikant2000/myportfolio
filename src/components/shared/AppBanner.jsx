@@ -1,8 +1,10 @@
+import { useCallback } from 'react';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 import { FiArrowDownCircle } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import unDraw from "../../images/undraw.svg"
 import { motion } from 'framer-motion';
+import { ReactTyped } from 'react-typed';
 
 const AppBanner = () => {
 	const [activeTheme] = useThemeSwitcher();
@@ -23,11 +25,12 @@ const AppBanner = () => {
 						duration: 0.9,
 						delay: 0.1,
 					}}
-					className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
+					className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left uppercase"
 				>
-					Hi, I am Shashikant
+					<span className="text-ternary-dark dark:text-primary-light">Hi, I am </span>
+					<span className="gradient-text">Shashikant</span>
 				</motion.h1>
-				<motion.p
+				<motion.div
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{
@@ -37,8 +40,18 @@ const AppBanner = () => {
 					}}
 					className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
 				>
-					A Full-Stack Developer & Design Enthusiast
-				</motion.p>
+					<ReactTyped
+						strings={[
+							'A Software Engineer at Microsoft',
+							'A .NET &amp; Azure Developer',
+							'A Full-Stack Engineer',
+							'A Database Migration Specialist',
+						]}
+						typeSpeed={50}
+						backSpeed={30}
+						loop
+					/>
+				</motion.div>
 				<motion.div
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}

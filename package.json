@@ -7,6 +7,8 @@
 		"@testing-library/jest-dom": "^5.16.5",
 		"@testing-library/react": "^13.4.0",
 		"@testing-library/user-event": "^14.4.3",
+		"@tsparticles/react": "^3.0.0",
+		"@tsparticles/slim": "^3.9.1",
 		"dompurify": "^3.3.3",
 		"framer-motion": "4.1.17",
 		"postcss-cli": "^10.1.0",
@@ -17,6 +19,7 @@
 		"react-router-dom": "^6.0.2",
 		"react-scripts": "^5.0.1",
 		"react-scroll": "^1.8.4",
+		"react-typed": "^2.0.12",
 		"web-vitals": "^1.0.1"
 	},
 	"scripts": {

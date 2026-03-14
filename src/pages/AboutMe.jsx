@@ -1,6 +1,6 @@
 import AboutMeBio from '../components/about/AboutMeBio';
 import AboutCounter from '../components/about/AboutCounter';
-// import AboutClients from '../components/about/AboutClients';
+import AboutSkills from '../components/about/AboutSkills';
 import { AboutMeProvider } from '../context/AboutMeContext';
 import { motion } from 'framer-motion';
 
@@ -14,6 +14,7 @@ const About = () => {
 				className="container mx-auto"
 			>
 				<AboutMeBio />
+				<AboutSkills />
 			</motion.div>
 
 			{/** Counter without paddings */}

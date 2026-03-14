@@ -3,6 +3,7 @@ import WebImage1 from '../images/web-project-1.jpg';
 import WebImage2 from '../images/web-project-2.jpg';
 import UIImage1 from '../images/ui-project-1.jpg';
 import SSMAImage from '../images/ssma-project.png';
+import SQLVMImage from '../images/sql-vm-migration.jpg';
 import {marginProjectData} from "../data/marginProjectData";
 import {testingProjectData} from "../data/testingProjectData";
 import {quiProjectData} from "../data/quiProjectData";
@@ -13,7 +14,7 @@ const rawProjectsData = [
 		title: 'SQL Server VM Migration (Azure)',
 		slug: 'sql-vm-migration',
 		category: 'Web Application',
-		img: WebImage1,
+		img: SQLVMImage,
 		data: vmMigrationProjectData
 	},
 	{

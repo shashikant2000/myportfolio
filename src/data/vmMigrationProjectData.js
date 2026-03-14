@@ -1,5 +1,5 @@
 // Import images
-import Image1 from '../images/web-project-1.jpg';
+import SQLVMImage from '../images/sql-vm-migration.jpg';
 import Image2 from '../images/web-project-2.jpg';
 import Image3 from '../images/ui-project-1.jpg';
 import Image4 from '../images/mobile-project-1.jpg';
@@ -22,7 +22,7 @@ export const vmMigrationProjectData = {
 		{
 			id: 1,
 			title: 'SQL VM Migration',
-			img: Image1,
+			img: SQLVMImage,
 		},
 		{
 			id: 2,

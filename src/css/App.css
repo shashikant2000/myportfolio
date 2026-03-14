@@ -7,6 +7,21 @@ body {
 	font-family: 'GeneralSans-Variable';
 }
 
+/* Gradient text */
+.gradient-text {
+	background: linear-gradient(135deg, #6366f1, #8b5cf6, #a855f7);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+.dark .gradient-text {
+	background: linear-gradient(135deg, #818cf8, #a78bfa, #c084fc);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
 /* Fonts */
 @font-face {
 	font-family: 'GeneralSans-Variable';

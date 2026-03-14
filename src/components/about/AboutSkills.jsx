@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion';
-
 const skills = [
 	'C#', '.NET', 'Azure', 'SQL Server', 'React', 'Angular',
 	'TypeScript', 'JavaScript', 'Electron', 'Node.js',
@@ -7,47 +5,28 @@ const skills = [
 	'WPF', 'Vite', 'CI/CD', 'Accessibility',
 ];
 
-const container = {
-	hidden: { opacity: 0 },
-	show: {
-		opacity: 1,
-		transition: { staggerChildren: 0.06 },
-	},
-};
-
-const item = {
-	hidden: { opacity: 0, scale: 0.8 },
-	show: { opacity: 1, scale: 1 },
-};
-
 const AboutSkills = () => {
 	return (
-		<div className="mt-10 sm:mt-14">
+		<div className="mt-10 sm:mt-14 px-4 sm:px-0">
 			<h3 className="font-general-medium text-2xl text-ternary-dark dark:text-ternary-light mb-6">
 				Technical Skills
 			</h3>
-			<motion.div
-				className="flex flex-wrap gap-3"
-				variants={container}
-				initial="hidden"
-				animate="show"
-			>
+			<div className="flex gap-3 sm:gap-4" style={{ flexWrap: 'wrap' }}>
 				{skills.map((skill) => (
-					<motion.span
+					<span
 						key={skill}
-						variants={item}
-						whileHover={{ scale: 1.1, y: -2 }}
-						className="px-4 py-2 rounded-lg text-sm font-general-medium
+						style={{ borderRadius: '9999px', minHeight: '40px', flexShrink: 0 }}
+						className="inline-flex items-center justify-center px-4 py-2 text-sm text-center leading-tight font-general-medium
 							bg-indigo-50 dark:bg-indigo-900/30
 							text-indigo-600 dark:text-indigo-200
-							border border-indigo-200 dark:border-indigo-600
-							shadow-sm hover:shadow-md
-							cursor-default transition-shadow duration-300"
+							border border-indigo-200 dark:border-indigo-500/40
+							shadow-sm hover:shadow-lg hover:-translate-y-0.5
+							cursor-default transition-all duration-300"
 					>
 						{skill}
-					</motion.span>
+					</span>
 				))}
-			</motion.div>
+			</div>
 		</div>
 	);
 };

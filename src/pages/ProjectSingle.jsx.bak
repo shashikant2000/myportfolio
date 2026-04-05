@@ -20,6 +20,7 @@ const ProjectSingle = () => {
 	if (!singleProjectData) {
 		return (
 			<div className="flex flex-col items-center justify-center min-h-[60vh] text-center px-4">
+				<div className="text-6xl mb-4">🔍</div>
 				<p className="text-xl text-gray-500 dark:text-gray-400 font-general-medium">Project not found.</p>
 			</div>
 		);

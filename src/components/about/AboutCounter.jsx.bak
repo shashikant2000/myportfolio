@@ -10,7 +10,6 @@ const counters = [
 
 const AboutCounter = () => {
 	counters.forEach((c) => {
-		// eslint-disable-next-line react-hooks/rules-of-hooks
 		useCountUp({ ref: c.id, end: c.end, duration: 2, enableScrollSpy: true, scrollSpyOnce: true });
 	});
 
@@ -18,6 +17,7 @@ const AboutCounter = () => {
 		<div className="mt-20 sm:mt-28">
 			<div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-500 via-purple-600 to-pink-500 p-px">
 				<div className="rounded-3xl bg-primary-dark/90 backdrop-blur-xl px-6 sm:px-12 py-16 sm:py-20">
+					{/* Decorative elements */}
 					<div className="absolute top-0 right-0 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl" />
 					<div className="absolute bottom-0 left-0 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl" />
 

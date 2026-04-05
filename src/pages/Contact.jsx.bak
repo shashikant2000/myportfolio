@@ -15,6 +15,7 @@ const Contact = () => {
 			transition={{ duration: 0.5 }}
 			className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20"
 		>
+			{/* Header */}
 			<div className="text-center mb-16">
 				<h1 className="font-general-bold text-3xl sm:text-4xl lg:text-5xl text-gray-900 dark:text-white">
 					Get in{' '}
@@ -28,6 +29,7 @@ const Contact = () => {
 			</div>
 
 			<div className="max-w-2xl mx-auto">
+				{/* Contact cards */}
 				<div className="space-y-4">
 					{contacts.map((contact, idx) => (
 						<motion.div
@@ -42,11 +44,17 @@ const Contact = () => {
 							</div>
 							<div>
 								{contact.type === 'email' ? (
-									<a href={`mailto:${contact.name}`} className="text-gray-700 dark:text-gray-200 font-general-medium text-base sm:text-lg hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-200">
+									<a
+										href={`mailto:${contact.name}`}
+										className="text-gray-700 dark:text-gray-200 font-general-medium text-base sm:text-lg hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-200"
+									>
 										{contact.name}
 									</a>
 								) : contact.type === 'phone' ? (
-									<a href={`tel:${contact.name}`} className="text-gray-700 dark:text-gray-200 font-general-medium text-base sm:text-lg hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-200">
+									<a
+										href={`tel:${contact.name}`}
+										className="text-gray-700 dark:text-gray-200 font-general-medium text-base sm:text-lg hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-200"
+									>
 										{contact.name}
 									</a>
 								) : (
@@ -59,6 +67,7 @@ const Contact = () => {
 					))}
 				</div>
 
+				{/* Quick action */}
 				<motion.div
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}

@@ -9,14 +9,16 @@ const Home = () => {
 	return (
 		<div>
 			<AppBanner />
+
 			<div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 				<ProjectsProvider>
 					<ProjectsGrid />
 				</ProjectsProvider>
+
 				<motion.div
 					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					transition={{ duration: 0.5 }}
+					whileInView={{ opacity: 1 }}
+					viewport={{ once: true }}
 					className="flex justify-center pb-12"
 				>
 					<Link

@@ -24,10 +24,11 @@ const ProjectsGrid = () => {
 
 	return (
 		<section className="py-12 sm:py-20">
+			{/* Section header */}
 			<motion.div
 				initial={{ opacity: 0, y: 20 }}
-				animate={{ opacity: 1, y: 0 }}
-				transition={{ duration: 0.5 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				viewport={{ once: true }}
 				className="text-center mb-12 sm:mb-16"
 			>
 				<h2 className="font-general-bold text-3xl sm:text-4xl lg:text-5xl text-gray-900 dark:text-white">
@@ -41,6 +42,7 @@ const ProjectsGrid = () => {
 				</p>
 			</motion.div>
 
+			{/* Search and filter */}
 			<div className="flex flex-col sm:flex-row gap-4 justify-between items-center mb-8 sm:mb-12">
 				<div className="relative w-full sm:w-auto">
 					<FiSearch className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
@@ -55,6 +57,7 @@ const ProjectsGrid = () => {
 				<ProjectsFilter setSelectProject={setSelectProject} />
 			</div>
 
+			{/* Projects grid */}
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
 				{displayedProjects.map((project) => (
 					<ProjectSingle

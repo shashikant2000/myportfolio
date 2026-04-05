@@ -5,6 +5,22 @@
 
 body {
 	font-family: 'GeneralSans-Variable';
+	overscroll-behavior-y: none;
+}
+
+/* Elastic overscroll stretch effect */
+html {
+	overflow-y: scroll;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+	body {
+		-webkit-overflow-scrolling: touch;
+	}
+}
+
+#root {
+	transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 /* Gradient text */
@@ -221,8 +237,8 @@ body {
 
 /* Scroll to top style */
 .scrollToTop {
-	@apply bg-indigo-600;
-	@apply text-white;
+	background-color: #4f46e5;
+	color: white;
 	position: fixed;
 	width: 100%;
 	align-items: center;

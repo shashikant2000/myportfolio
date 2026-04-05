@@ -6,11 +6,13 @@ const ProjectSingle = ({ title, category, image, slug }) => {
 	return (
 		<motion.div
 			initial={{ opacity: 0, y: 30 }}
-			animate={{ opacity: 1, y: 0 }}
+			whileInView={{ opacity: 1, y: 0 }}
+			viewport={{ once: true, margin: '-50px' }}
 			transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
 		>
 			<Link to={`/projects/${slug}`} className="group block" aria-label={title}>
 				<div className="relative rounded-2xl overflow-hidden bg-gray-100 dark:bg-secondary-dark border border-gray-200/50 dark:border-white/5 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-500/10 dark:hover:shadow-indigo-500/5 hover:-translate-y-2">
+					{/* Image */}
 					<div className="aspect-[16/10] overflow-hidden">
 						<img
 							src={image}
@@ -18,11 +20,15 @@ const ProjectSingle = ({ title, category, image, slug }) => {
 							alt={title}
 							loading="lazy"
 						/>
+						{/* Hover overlay */}
 						<div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+						{/* Arrow icon on hover */}
 						<div className="absolute top-4 right-4 p-2 rounded-full bg-white/90 dark:bg-gray-900/90 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
 							<FiArrowUpRight className="w-4 h-4 text-gray-900 dark:text-white" />
 						</div>
 					</div>
+
+					{/* Content */}
 					<div className="p-5 sm:p-6">
 						<h3 className="font-general-medium text-lg text-gray-900 dark:text-white group-hover:text-indigo-500 dark:group-hover:text-indigo-400 transition-colors duration-300">
 							{title}

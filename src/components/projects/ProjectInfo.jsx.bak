@@ -8,12 +8,14 @@ const ProjectInfo = () => {
 
 	return (
 		<div className="flex flex-col lg:flex-row gap-12 lg:gap-16 mt-14 sm:mt-20">
+			{/* Left sidebar */}
 			<motion.div
 				initial={{ opacity: 0, x: -20 }}
 				animate={{ opacity: 1, x: 0 }}
 				transition={{ duration: 0.5, delay: 0.2 }}
 				className="w-full lg:w-1/3 space-y-8"
 			>
+				{/* Client info */}
 				<div className="p-6 rounded-2xl bg-white dark:bg-white/5 border border-gray-200/50 dark:border-white/5">
 					<h3 className="font-general-medium text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-4">
 						{singleProjectData.ProjectInfo.ClientHeading}
@@ -24,7 +26,12 @@ const ProjectInfo = () => {
 								<span className="text-gray-500 dark:text-gray-400">{info.title}</span>
 								<br />
 								{info.url ? (
-									<a href={info.url} target="_blank" rel="noopener noreferrer" className="text-indigo-500 dark:text-indigo-400 hover:underline">
+									<a
+										href={info.url}
+										target="_blank"
+										rel="noopener noreferrer"
+										className="text-indigo-500 dark:text-indigo-400 hover:underline"
+									>
 										{info.details}
 									</a>
 								) : (
@@ -35,6 +42,7 @@ const ProjectInfo = () => {
 					</ul>
 				</div>
 
+				{/* Objective */}
 				<div className="p-6 rounded-2xl bg-white dark:bg-white/5 border border-gray-200/50 dark:border-white/5">
 					<h3 className="font-general-medium text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3">
 						{singleProjectData.ProjectInfo.ObjectivesHeading}
@@ -44,19 +52,24 @@ const ProjectInfo = () => {
 					</p>
 				</div>
 
+				{/* Technologies */}
 				<div className="p-6 rounded-2xl bg-white dark:bg-white/5 border border-gray-200/50 dark:border-white/5">
 					<h3 className="font-general-medium text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-4">
 						{singleProjectData.ProjectInfo.Technologies[0].title}
 					</h3>
 					<div className="flex flex-wrap gap-2">
 						{singleProjectData.ProjectInfo.Technologies[0].techs.map((tech) => (
-							<span key={tech} className="inline-flex items-center px-3 py-1 rounded-lg text-xs font-general-medium bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400">
+							<span
+								key={tech}
+								className="inline-flex items-center px-3 py-1 rounded-lg text-xs font-general-medium bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400"
+							>
 								{tech}
 							</span>
 						))}
 					</div>
 				</div>
 
+				{/* Social sharing */}
 				<div className="p-6 rounded-2xl bg-white dark:bg-white/5 border border-gray-200/50 dark:border-white/5">
 					<h3 className="font-general-medium text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-4">
 						{singleProjectData.ProjectInfo.SocialSharingHeading}
@@ -78,6 +91,7 @@ const ProjectInfo = () => {
 				</div>
 			</motion.div>
 
+			{/* Right content */}
 			<motion.div
 				initial={{ opacity: 0, x: 20 }}
 				animate={{ opacity: 1, x: 0 }}
@@ -91,7 +105,7 @@ const ProjectInfo = () => {
 					{singleProjectData.ProjectInfo.ProjectDetails.map((details) => (
 						<div
 							key={details.id}
-							className="text-gray-600 dark:text-gray-300 text-base leading-relaxed font-general-regular [&_strong]:text-gray-900 dark:[&_strong]:text-white [&_strong]:font-general-semibold"
+							className="text-gray-600 dark:text-gray-300 text-base leading-relaxed font-general-regular prose prose-indigo dark:prose-invert max-w-none"
 							dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(details.details) }}
 						/>
 					))}

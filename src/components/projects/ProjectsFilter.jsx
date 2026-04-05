@@ -8,7 +8,7 @@ const ProjectsFilter = ({ setSelectProject }) => {
 	return (
 		<select
 			onChange={(e) => setSelectProject(e.target.value)}
-			className="w-full sm:w-auto px-4 py-3 rounded-xl border border-gray-200 dark:border-white/10 bg-white dark:bg-white/5 text-gray-900 dark:text-white font-general-regular text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 transition-all duration-300 cursor-pointer appearance-none"
+			className="w-full sm:w-auto px-4 py-3 rounded-xl border border-gray-200 dark:border-white/10 bg-white dark:bg-secondary-dark text-gray-900 dark:text-white font-general-regular text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 transition-all duration-300 cursor-pointer appearance-none"
 			style={{
 				backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%236b7280' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E")`,
 				backgroundRepeat: 'no-repeat',
@@ -16,9 +16,9 @@ const ProjectsFilter = ({ setSelectProject }) => {
 				paddingRight: '36px',
 			}}
 		>
-			<option value="">All Projects</option>
+			<option value="" className="bg-white dark:bg-secondary-dark text-gray-900 dark:text-white">All Projects</option>
 			{selectOptions.map((option) => (
-				<option key={option}>{option}</option>
+				<option key={option} className="bg-white dark:bg-secondary-dark text-gray-900 dark:text-white">{option}</option>
 			))}
 		</select>
 	);

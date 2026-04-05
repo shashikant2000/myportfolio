@@ -24,7 +24,7 @@ const ProjectSingle = ({ title, category, image, slug }) => {
 						</div>
 					</div>
 					<div className="p-5 sm:p-6">
-						<h3 className="font-general-medium text-lg text-gray-900 dark:text-white group-hover:text-indigo-500 dark:group-hover:text-indigo-400 transition-colors duration-300">
+						<h3 className="font-general-medium text-lg text-gray-900 dark:text-white group-hover:text-indigo-500 dark:group-hover:text-indigo-400 transition-colors duration-300 line-clamp-1">
 							{title}
 						</h3>
 						<span className="inline-flex items-center mt-2 px-3 py-1 rounded-full text-xs font-general-medium bg-gray-100 dark:bg-white/5 text-gray-600 dark:text-gray-400">

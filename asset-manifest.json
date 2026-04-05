@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/myportfolio/static/css/main.14445307.css",
-    "main.js": "/myportfolio/static/js/main.4acdd6f6.js",
+    "main.js": "/myportfolio/static/js/main.a9d9ee16.js",
     "static/js/61.d72c14c0.chunk.js": "/myportfolio/static/js/61.d72c14c0.chunk.js",
     "static/js/571.214a095c.chunk.js": "/myportfolio/static/js/571.214a095c.chunk.js",
-    "static/js/116.57e0db4e.chunk.js": "/myportfolio/static/js/116.57e0db4e.chunk.js",
-    "static/js/283.ae2246c6.chunk.js": "/myportfolio/static/js/283.ae2246c6.chunk.js",
+    "static/js/116.e9fa84f4.chunk.js": "/myportfolio/static/js/116.e9fa84f4.chunk.js",
+    "static/js/283.3d6ef40e.chunk.js": "/myportfolio/static/js/283.3d6ef40e.chunk.js",
     "static/js/947.0d1b6439.chunk.js": "/myportfolio/static/js/947.0d1b6439.chunk.js",
     "static/js/132.b021b37b.chunk.js": "/myportfolio/static/js/132.b021b37b.chunk.js",
     "static/js/453.ef8d69dc.chunk.js": "/myportfolio/static/js/453.ef8d69dc.chunk.js",
@@ -15,7 +15,9 @@
     "static/media/GeneralSans-VariableItalic.ttf": "/myportfolio/static/media/GeneralSans-VariableItalic.37a2c9e4ec944dec5059.ttf",
     "static/media/GeneralSans-Variable.ttf": "/myportfolio/static/media/GeneralSans-Variable.d7facbbe2ed9ae4aae49.ttf",
     "static/media/web-project-2.jpg": "/myportfolio/static/media/web-project-2.f01087020cc02a54e124.jpg",
+    "static/media/resumeforge-editor.png": "/myportfolio/static/media/resumeforge-editor.86648213b6d4fb95c7ae.png",
     "static/media/ui-project-1.jpg": "/myportfolio/static/media/ui-project-1.41def4d8652deca915b2.jpg",
+    "static/media/resumeforge-home.png": "/myportfolio/static/media/resumeforge-home.0384c674fe8243a8fdfb.png",
     "static/media/GeneralSans-LightItalic.ttf": "/myportfolio/static/media/GeneralSans-LightItalic.01f39fefaea383e46bde.ttf",
     "static/media/GeneralSans-MediumItalic.ttf": "/myportfolio/static/media/GeneralSans-MediumItalic.8eb302fc9872cba25291.ttf",
     "static/media/GeneralSans-Italic.ttf": "/myportfolio/static/media/GeneralSans-Italic.61b5c6351467c3e67236.ttf",
@@ -39,6 +41,7 @@
     "static/media/GeneralSans-LightItalic.woff": "/myportfolio/static/media/GeneralSans-LightItalic.b3f37670fedaabb03a25.woff",
     "static/media/GeneralSans-Italic.woff": "/myportfolio/static/media/GeneralSans-Italic.38fe83c7db536c3d94dd.woff",
     "static/media/GeneralSans-MediumItalic.woff": "/myportfolio/static/media/GeneralSans-MediumItalic.be50bba710738fc9f7a6.woff",
+    "static/media/resumeforge-templates.png": "/myportfolio/static/media/resumeforge-templates.e652e94736da7a15bfbc.png",
     "static/media/ui-project-2.jpg": "/myportfolio/static/media/ui-project-2.d289191456efd2d47465.jpg",
     "static/media/GeneralSans-Semibold.woff": "/myportfolio/static/media/GeneralSans-Semibold.f7917c077957122793f6.woff",
     "static/media/GeneralSans-Light.woff": "/myportfolio/static/media/GeneralSans-Light.705af1342b8d9e53554c.woff",
@@ -67,11 +70,11 @@
     "static/media/undraw.svg": "/myportfolio/static/media/undraw.d9fef57aeb0195dce8feb97d1e5a2ec0.svg",
     "index.html": "/myportfolio/index.html",
     "main.14445307.css.map": "/myportfolio/static/css/main.14445307.css.map",
-    "main.4acdd6f6.js.map": "/myportfolio/static/js/main.4acdd6f6.js.map",
+    "main.a9d9ee16.js.map": "/myportfolio/static/js/main.a9d9ee16.js.map",
     "61.d72c14c0.chunk.js.map": "/myportfolio/static/js/61.d72c14c0.chunk.js.map",
     "571.214a095c.chunk.js.map": "/myportfolio/static/js/571.214a095c.chunk.js.map",
-    "116.57e0db4e.chunk.js.map": "/myportfolio/static/js/116.57e0db4e.chunk.js.map",
-    "283.ae2246c6.chunk.js.map": "/myportfolio/static/js/283.ae2246c6.chunk.js.map",
+    "116.e9fa84f4.chunk.js.map": "/myportfolio/static/js/116.e9fa84f4.chunk.js.map",
+    "283.3d6ef40e.chunk.js.map": "/myportfolio/static/js/283.3d6ef40e.chunk.js.map",
     "947.0d1b6439.chunk.js.map": "/myportfolio/static/js/947.0d1b6439.chunk.js.map",
     "132.b021b37b.chunk.js.map": "/myportfolio/static/js/132.b021b37b.chunk.js.map",
     "453.ef8d69dc.chunk.js.map": "/myportfolio/static/js/453.ef8d69dc.chunk.js.map",
@@ -80,6 +83,6 @@
   },
   "entrypoints": [
     "static/css/main.14445307.css",
-    "static/js/main.4acdd6f6.js"
+    "static/js/main.a9d9ee16.js"
   ]
 }

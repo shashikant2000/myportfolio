@@ -2,7 +2,7 @@ import { FiArrowDownCircle, FiGithub, FiLinkedin } from 'react-icons/fi';
 import { Link } from 'react-router';
 import { motion } from 'framer-motion';
 import { ReactTyped } from 'react-typed';
-import profileImg from '../../images/profile.jpeg';
+import profileImg from '../../images/profile4.jpg';
 
 const AppBanner = () => {
 	return (
@@ -47,7 +47,7 @@ const AppBanner = () => {
 						<div className="mt-4 sm:mt-6 text-lg sm:text-xl lg:text-2xl text-gray-500 dark:text-gray-400 font-general-regular h-8 sm:h-10">
 							<ReactTyped
 								strings={[
-									'Software Engineer at Microsoft',
+										'Software Engineer II at Microsoft',
 									'.NET &amp; Azure Developer',
 									'Full-Stack Engineer',
 									'Database Migration Specialist',

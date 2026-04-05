@@ -31,7 +31,7 @@ const AppFooter = () => {
 							</span>
 						</Link>
 						<p className="mt-4 text-gray-500 dark:text-gray-400 font-general-regular text-sm max-w-xs">
-							Software Engineer at Microsoft, building tools that help developers move to the cloud.
+							Software Engineer II at Microsoft, building migration tools and cloud services at Azure Data.
 						</p>
 					</div>
 

@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { motion } from 'framer-motion';
 import AboutMeContext from '../../context/AboutMeContext';
-import profileImage from '../../images/profile.jpeg';
+import profileImage from '../../images/profile4.jpg';
 
 const AboutMeBio = () => {
 	const { aboutMe } = useContext(AboutMeContext);

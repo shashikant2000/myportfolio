@@ -1,1 +1,0 @@
-import{l as e,t}from"./proxy-BaaVztzA.js";import{n,t as r}from"./ProjectsGrid-BGkHtbrS.js";var i=e(),a=()=>(0,i.jsx)(n,{children:(0,i.jsx)(t.div,{initial:{opacity:0},animate:{opacity:1},transition:{duration:.5},className:`max-w-6xl mx-auto px-4 sm:px-6 lg:px-8`,children:(0,i.jsx)(r,{})})});export{a as default};

@@ -4,12 +4,21 @@ import WebImage2 from '../images/web-project-2.jpg';
 import UIImage1 from '../images/ui-project-1.jpg';
 import SSMAImage from '../images/ssma-project.png';
 import SQLVMImage from '../images/sql-vm-migration.jpg';
+import ResumeForgeImg from '../images/resumeforge-home.png';
 import {marginProjectData} from "../data/marginProjectData";
 import {testingProjectData} from "../data/testingProjectData";
 import {quiProjectData} from "../data/quiProjectData";
 import {ssmaProjectData} from "../data/ssmaProjectData";
 import {vmMigrationProjectData} from "../data/vmMigrationProjectData";
+import {resumeBuilderProjectData} from "../data/resumeBuilderProjectData";
 const rawProjectsData = [
+	{
+		title: 'ResumeForge',
+		slug: 'resumeforge',
+		category: 'Web Application',
+		img: ResumeForgeImg,
+		data: resumeBuilderProjectData
+	},
 	{
 		title: 'SQL Server VM Migration (Azure)',
 		slug: 'sql-vm-migration',

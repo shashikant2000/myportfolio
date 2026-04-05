@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 
 const counters = [
 	{ id: 'experienceCounter', end: 4, label: 'Years of Experience', suffix: '+' },
-	{ id: 'linkedInCounter', end: 1298, label: 'LinkedIn Followers', suffix: '' },
-	{ id: 'feedbackCounter', end: 95, label: 'Positive Feedback', suffix: '%' },
-	{ id: 'projectsCounter', end: 8, label: 'Projects Completed', suffix: '+' },
+	{ id: 'downloadsCounter', end: 30, label: 'Internal Downloads (K)', suffix: 'K+' },
+	{ id: 'prsCounter', end: 200, label: 'Pull Requests Merged', suffix: '+' },
+	{ id: 'releasesCounter', end: 10, label: 'Releases Shipped', suffix: '+' },
 ];
 
 const AboutCounter = () => {

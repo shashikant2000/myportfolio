@@ -1,0 +1,1 @@
+var e=`/myportfolio/assets/profile-DdcodONa.jpeg`;export{e as t};

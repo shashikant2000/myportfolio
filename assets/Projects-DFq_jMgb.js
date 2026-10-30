@@ -1,0 +1,1 @@
+import{n as e,t}from"./ProjectsGrid-BS5-NYO9.js";import{l as n,t as r}from"./proxy-DAbMXLfN.js";var i=n(),a=()=>(0,i.jsx)(e,{children:(0,i.jsx)(r.div,{initial:{opacity:0},animate:{opacity:1},transition:{duration:.5},className:`max-w-6xl mx-auto px-4 sm:px-6 lg:px-8`,children:(0,i.jsx)(t,{})})});export{a as default};

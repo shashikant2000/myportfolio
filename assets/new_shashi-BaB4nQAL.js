@@ -1,0 +1,1 @@
+var e=`/myportfolio/assets/new_shashi-CCXTifvG.jpg`;export{e as t};
